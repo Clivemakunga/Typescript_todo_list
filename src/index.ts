@@ -25,7 +25,7 @@ form?.addEventListener("submit", e =>{
     id: uuidV4(),
     title: input.value,
     completed: false,
-    createdAt: Date.now
+    createdAt: new Date()
   }
   task.push(newTask)
   saveTasks()
